@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<style>
+.container{
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30rem;
+  margin-top: 7.5rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(20, 231, 228, 0.804),rgba(168, 161, 161, 0.845));
+  color: white;
+}
+input{
+  width: 40%;
+  padding: 7px;
+}
+.message{
+  width: 50%;
+  padding: 7px;
+}
+button{
+  padding:10px ;
+  margin: 10px;
+  background-color: rgb(65, 176, 204);
+  font-weight: bold;
+  color: white;
+  border: 2px solid black;
+  border-radius: 14px;
+  cursor: pointer;
+}
+h2{
+  text-decoration: overline;
+  text-decoration-color: rgb(47, 47, 222);
+}
+</style>
+<body>
+  
+  <form action="https://api.web3forms.com/submit" method="POST">
+    
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="d2d474e1-a29d-4c4f-88b1-23b297327f66">
+    
+    <div class="container">
+      <!-- Form Inputs. Each input must have a name="" attribute -->
+      <h2 >Name</h2>
+      <input type="text" name="name" required>
+      <h2>E-Mail</h2>
+      <input type="email" name="email" required>
+      <h2>Message</h2>
+      <textarea class="message" name="message" required></textarea>
+      
+      <!-- hCaptcha Spam Protection -->
+      <div class="h-captcha" data-captcha="true"></div>
+      
+      <button type="submit">Submit Form</button>
+      
+    </form>
+  </div>
+    <!-- Required for hCaptcha -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  </body>
+  </html>
