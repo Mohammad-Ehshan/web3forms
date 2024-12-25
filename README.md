@@ -4,7 +4,7 @@
 A simple guide demonstrating how to integrate Web3Forms with HTML forms to handle form submissions without a backend. This integration includes hCaptcha verification for enhanced security and sends form submissions directly to your email.
 
 ## Live Demo
-Visit the live site: [E-Learning Platform](https://web3form-ehshan.netlify.app/)
+Visit the live site: [Web3Form](https://web3form-ehshan.netlify.app/)
 
 ## Author
 Mohammad Ehshan
