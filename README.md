@@ -84,4 +84,4 @@ Web3Forms provides default success/error pages, but you can customize them:
 5. Easy to integrate and maintain
 
 ## Resources
-- [Web3Forms Documentation](https://web3forms.com/docs)
+- [Web3Forms Documentation](https://docs.web3forms.com/)
